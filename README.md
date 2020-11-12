@@ -1,7 +1,13 @@
 # Vending-Machine
 
 A HTML and JavaScript web application hosting a vending machine that dispenses coldrinks. Launching `vending.html` in a server allows you to view and interact with it. 
-If you're lanching through your browser, the XMLHttPRequest will not work due to CORS errors. Please start a server either by using python's SimpleHTTPServer or download the Chrome extension listed first in the required dependancies below.
+If you're lanching through your browser, the XMLHttPRequest will not work due to **CORS** errors. Please start a server either by using **python's SimpleHTTPServer** or download the Chrome extension listed first in the required dependancies below.
+
+The python server can be launched by executing
+```sh
+python -m SimpleHTTPServer port
+```
+The default port is 8000. You can add your own if you want to.
 
 # Requirements
 A number of tools and frameworks are required for the operation of the app. It's importat to install the following:
