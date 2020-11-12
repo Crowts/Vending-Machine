@@ -4,6 +4,7 @@ A HTML and JavaScript web application hosting a vending machine that dispenses c
 
 # Requirements
 A number of tools and frameworks are required for the operation of the app. It's importat to install the following:
+<br/>
 [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related?hl=en)
 <br/>
 [Node.js](https://nodejs.org/en/download/)
