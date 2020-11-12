@@ -4,23 +4,22 @@ A HTML and JavaScript web application hosting a vending machine that dispenses c
 
 # Requirements
 A number of tools and frameworks are required for the operation of the app. It's importat to install the following:
-Web Server for Chrome (extension)
+[Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related?hl=en)
 <br/>
-Node.js
+[Node.js](https://nodejs.org/en/download/)
 <br/>
-express
+[express](https://www.npmjs.com/package/express)
 <br/>
-npm
+[npm](https://docs.npmjs.com/cli/v6/commands/npm-install)
 <br/>
-mongoose
+[mongoose](https://mongoosejs.com/docs/)
 <br/>
-[[Body-parser]()
+[Body-parser](http://expressjs.com/en/resources/middleware/body-parser.html)
 <br/>
-[Mongo Atlas]()
+[Mongo Atlas](https://account.mongodb.com/account/login?n=%2Fv2%2F5faaf5879f62284b8b619cba&nextHash=%23clusters)
 <br/>
-[Postman]()
+[Postman](https://www.postman.com/downloads/)
 <br/>
-
 
 # Objectives
 The vending machine is supposed to satisfy the objectives as described below.
