@@ -1,0 +1,33 @@
+<div id="coin-refresh container">
+    <form style="margin-bottom: 10px;">
+        <span>R5</span>
+        <input type="text" name="fiverand" id="fiverand" placeholder="0" value="0" oninput="tally()" />
+        <br/>
+        <span>R2</span>
+        <input type="text" name="tworand" id="tworand" placeholder="0" value="0" oninput="tally()" />
+        <br />
+        <span>R1</span>
+        <input type="text" name="onerand" id="onerand" placeholder="0" value="0" oninput="tally()" />
+        <br />
+        <span>R0.20</span>
+        <input type="text" name="twentycent" id="twentycent" placeholder="0" value="0" oninput="tally()" />
+    </form>
+</div>
+
+  
+<!-- <script> 
+   const xhr = new XMLHTTpResponse();
+
+    const container = document.getElementById("coin-refresh container");
+
+    xhr.onload = function(){
+        if (this.status === 200) {
+            container.innerHTML = xhr.responseText;
+        } else {
+            console.warn('Status NOT 200! Coins not refreshed.')
+        }
+    }
+
+  xhr.open('get', 'vend.html')
+  xhr.send();
+</script>  -->

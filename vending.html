@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible content="ie-edge />
+    <title>Vending Machine</title>
+  </head>
+
+  <body>
+
+    <style>
+      table, th, td {
+        border: 1px solid rgb(0, 0, 0);
+      }
+    </style>
+
+    <h1>Vending Machine</h1>
+
+    <div id ="table container">
+      <table  style="width:100%">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th> 
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Coke 340ml</td>
+          <td>4</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Fanta 340ml</td>
+          <td>5</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Sprite 340ml</td>
+          <td>4</td>
+          <td>12</td>
+        </tr>
+      </table>    
+    </div>
+
+    <div id="drinks-refresh container">
+      <h2 id="products"> Products </h2>
+        <button value="Coke 340ml\nPrice=R12" id="coke" onclick="dispenseProduct(0)">Coke 340ml</button>
+        <button value="Fanta 340ml\nPrice=R12" id="fanta" onclick="dispenseProduct(1)">Fanta 340ml</button>
+        <button value="Sprite 340ml\nPrice=R12" id="sprite" onclick="dispenseProduct(2)" style="margin-bottom: 10px">Sprite 340ml </button>
+    </div>
+    <br/>
+    <button value="Refresh" id="refresh" onclick="refresh_products()">Refresh Products</button>
+
+    <h2>Accepted Coins</h2>
+    <div id="coin-refresh container">
+        <form style="margin-bottom: 10px;">
+            <span>R5</span>
+            <input type="text" name="fiverand" id="fiverand" placeholder="0" value="0" oninput="tally()" />
+            <br/>
+            <span>R2</span>
+            <input type="text" name="tworand" id="tworand" placeholder="0" value="0" oninput="tally()" />
+            <br />
+            <span>R1</span>
+            <input type="text" name="onerand" id="onerand" placeholder="0" value="0" oninput="tally()" />
+            <br />
+            <span>R0.50</span>
+            <input type="text" name="fiftycent" id="fiftycent" placeholder="0" value="0" oninput="tally()" />
+            <br />
+            <!-- <span>R0.20</span>
+            <input type="text" name="twentycent" id="twentycent" placeholder="0" value="0" oninput="tally()" /> -->
+        </form>
+    </div>
+
+    <button value="Cancel" id="Cancel" onclick="cancel()">Cancel</button>
+    <button value="Refund" id="Refund" onclick="refund()">Refund</button>
+    <button value="Refresh Coins" id="coin_refresh" onclick="refresh()">Refresh Coins</button>
+
+    <!-- <script> 
+        const xhr = new XMLHttpRequest();
+     
+        const container = document.getElementById("coin-refresh container");
+     
+        xhr.onload = function(){
+            if (this.status === 200) {
+                container.innerHTML = xhr.responseText;
+            } else {
+                console.warn('Status NOT 200! Coins not refreshed.')
+            }
+         }
+     
+       xhr.open('get', 'vend.html')
+       xhr.send();
+    </script>  -->
+
+
+    <h2> Total Credit: R<span id="paid">0.00</span> </h2>
+    <h2 id="message"> Insert coins & select product.</h2>
+
+    <script src="vending.js"></script>
+  </body>
+</html>
