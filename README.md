@@ -1,6 +1,6 @@
 # Vending-Machine
 
-A HTML and JavaScript web application hosting a vending machine that dispenses coldrinks. Launching vending.html in a server allows you to view and interact with it. If you're lanching through your browser, the HTTP requests and AJAX will not work.
+A HTML and JavaScript web application hosting a vending machine that dispenses coldrinks. Launching `vending.html` in a server allows you to view and interact with it. If you're lanching through your browser, the HTTP requests and AJAX will not work.
 
 # Requirements
 A number of tools and frameworks are required for the operation of the app. It's importat to install the following:
