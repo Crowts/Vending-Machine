@@ -44,6 +44,15 @@ We require you to develop a single page application that does the following:
 
 
 The app sastifies most of these **requirements** through simple HTML and JavaScript.
+1. Web app uses buttons as a way of refreshing data. This done through AJAX and XMLHttRequest, where data is dynamically update from another HTML file.<br/>
+2. A button that refunds coins when an item is not selected.<br/>
+3. A cancel button for cancelling transactions. This automatically returns any coins that were inserted.<br/>
+4. A button that refreshes the coins and products sections separately.<br/>
+5. An alert message that shows the user when a refresh is started.<br/>
+
+## Some challenges
+1. Connecting the the built REST API with the front-end html webpage.
+2. Refreshing all data in the API simultaneously.<br/>
 
 
 # Useful Notes
